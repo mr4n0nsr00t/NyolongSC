@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#bersihindulu
+
+clear
+#bahan
+clear
+#start
+echo "###########################"
+echo "# Created By Mr 4n0nsr00T #"
+echo "# Date: 12-01-2019        #"
+echo "# Nyolong Script Deface   #"
+echo "#     One Squad Team      #"
+echo "#    Security Darknet     #"
+echo "#  Santri Salafy Cyber    #"
+echo "###########################"
+
+
+echo "<======[ Silahkan Pilih ]=====>"
+echo "(01) Nyolong Script Deface"
+echo "(02) Bikin Script Deface"
+echo "(03) Exit"
+echo "<==============================>"
+read -p "Pilih Nomor~# " n;
+
+if [ $n = 02 ] || [ $n = 2 ];then
+clear
+pkg install curl
+pkg install python2
+curl -LO https://raw.githubusercontent.com/4L13199/LITESCRIPT/master/LITESCRIPT.py
+python2 LITESCRIPT.py
+fi
+
+if [ $n = 03 ] || [ $n = 3 ];then
+echo "Terima Kasih Telah Menggunakan Tools 
+ini Wassalammualaikum wr wb"
+fi
+
+if [ $n = 01 ] || [ $n = 1 ];then
+pkg install curl
+mkdir hasil
+cd hasil
+read -p "Masukkan Url-nya~> " url;
+curl -LO $url
+echo "Cekk!"
+fi
